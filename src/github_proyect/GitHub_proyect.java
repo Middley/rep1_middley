@@ -5,6 +5,8 @@
  */
 package github_proyect;
 
+import java.util.Scanner;
+
 /**
  *
  * @author MIDDLEY
@@ -16,6 +18,47 @@ public class GitHub_proyect {
      */
     public static void main(String[] args) {
         System.out.println("Hola");
+    }
+    
+}
+
+class usuario{
+    private static char[] nombre;
+    private static char[] apellido;
+    private static long dni;
+    
+    public usuario(char[] nom,char[] ap,long d){
+        nombre = nom;
+        apellido = ap;
+        dni = d;
+    }
+    
+    //inicializacion del tamaño de nombre
+    public void setNombre(int tam){
+        nombre = new char[tam];
+    }
+    
+    //inicializacion del tamaño de apellido
+    public void setApellido(int tam2){
+        apellido = new char[tam2];
+    }
+    
+    //dar valor a dni
+    public void setDni(int t){
+        dni = t;
+    }
+    
+    public void ingreso(char a){
+        Scanner sc = new Scanner(System.in);
+        a = sc.next().charAt(0);        
+    }
+    
+    public char[] ingreso_nombre(){
+        
+        for (int i = 0; i < 10; i++) {
+            
+        }
+        return nombre;
     }
     
 }
