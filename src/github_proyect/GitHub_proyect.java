@@ -5,6 +5,7 @@
  */
 package github_proyect;
 
+import java.util.Date;
 import java.util.Scanner;
 
 /**
@@ -60,6 +61,11 @@ class usuario{
             
         }
         return nombre;
+    }
+    
+    public static void hora(){
+        int a,b,c;
+        System.out.println("Actualizando GitHub dia 06-10-2019");
     }
     
 }
