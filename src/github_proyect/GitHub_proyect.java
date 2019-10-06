@@ -57,10 +57,10 @@ class usuario{
     
     public char[] ingreso_nombre(){
         
-        for (int i = 0; i < 10; i++) {
-            
+        while(true){
+            System.out.println("f");
         }
-        return nombre;
+        return nombre;;
     }
     
     public static void hora(){
