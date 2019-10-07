@@ -29,11 +29,24 @@ class usuario{
     private static char[] apellido;
     private static long dni;
     
+    //========================================================================
     public usuario(char[] nom,char[] ap,long d){
         nombre = nom;
         apellido = ap;
         dni = d;
     }
+    
+    public usuario(){
+        nombre = null;
+        apellido = null;
+        dni = 0;
+    }
+    
+    public usuario(int dni){
+        dni = 8218271;
+    }
+    
+    //========================== metodos set ====================================
     
     //inicializacion del tamaño de nombre
     public void setNombre(int tam){
@@ -50,17 +63,34 @@ class usuario{
         dni = t;
     }
     
+    //========================== metodos get ======================================
+    public char[] getNombre(){
+        return nombre;
+    }
+    
+    public char[] getApellido(){
+        return apellido;        
+    }
+    
+    public long getDni(){
+        return dni;
+    }
+    
+    
+    
+    
+    
     public void ingreso(char a){
         Scanner sc = new Scanner(System.in);
         a = sc.next().charAt(0);        
     }
     
-    public char[] ingreso_nombre(){
+    public static char[] ingreso_nombre(){
         
         while(true){
             System.out.println("f");
         }
-        return nombre;;
+        return nombre;
     }
     
     public static void hora(){
